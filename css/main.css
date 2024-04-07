@@ -1,0 +1,105 @@
+.navbar-link-item {
+    font-size: 1.15em!important;
+    font-weight: 500;
+}
+
+.dynamic-background {
+    transition: background-color 0.5s ease
+}
+
+.headline-container {
+    display: flex; /* Makes the h1 element a flex container */
+    align-items: center; /* Centers the line vertically with the text */
+}
+
+/* .headline-container h1 {margin: 0;} */
+
+.decorative-line {
+    width: 200px; /* Width of the decorative line */
+    height: 3px; /* Height (thickness) of the decorative line */
+    background-color: #fddf00; /* Color of the decorative line */
+    margin-left: 20px; /* Space between the heading text and the line */
+}
+
+.truncate-multiline {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines you want to display */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%; /* Or a specific width */
+}
+
+.card-badge-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-badge {
+    padding: 10px 10px; 
+    background: #eee; 
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #fafafa;
+    color: black;
+}
+
+.uk-slideshow-items img {
+    object-position: top;
+}
+
+#maindiv {
+    background: "#df9ea8"
+}
+
+.hero-title {
+    font-size: 5em;
+    line-height: 70px;
+    letter-spacing: -5px;
+    margin-top: 1em;
+    margin-left: 1em;
+    font-weight: 600;
+}
+
+.about-us-half-container {
+
+}
+
+#eventsContainer {
+    margin: 6em auto; 
+    /* padding-right: 30px; */
+}
+
+#eventsContainer .uk-first-column {
+    padding-left: 0;
+}
+
+.event-card-date {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.event-card-date span {
+    flex-shrink: 0;
+}
+
+/* Tablets and below */
+@media (max-width: 768px) {
+    .hero-title {
+        margin-bottom: .2em;
+        line-height: 40px;
+        font-size: 3.5em; /* Smaller font size for tablets */
+    }
+}
+
+/* Mobile phones and below */
+@media (max-width: 480px) {
+    .hero-title {
+        margin-bottom: .2em;
+        line-height: 40px;
+        font-size: 2.5em; /* Even smaller font size for mobile phones */
+    }
+}

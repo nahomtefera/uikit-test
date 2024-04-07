@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing UI Kit</title>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/app/events.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+
+    <!-- Web Components -->
+
+</head>
+<body>
+    <!-- Navbar and Hero -->
+     <div 
+        class="dynamic-background uk-position-relative uk-background-cover" 
+        id="maindiv"
+    >
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent">
+                <div class="uk-container">
+                    <div uk-navbar>
+    
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active">
+                                    <a class="navbar-link-item uk-text-bold uk-text-capitalize" href="#">Active</a>
+                                </li>
+                                <li>
+                                    <a style="color:white" class="navbar-link-item uk-text-bold uk-text-capitalize" href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a style="color:white" class="navbar-link-item uk-text-bold uk-text-capitalize" href="#">Item</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <br><br>
+        <div 
+            class="uk-section uk-dark" 
+            style="padding-bottom:0"    
+        >
+            <div class="uk-container">
+                <!-- <h1><b>New York's Premier Speed Dating Experience!</b></h1> -->
+
+                <div 
+                    class="uk-position-relative uk-visible-toggle uk-light" 
+                    tabindex="-1" 
+                    id="slider-parent"
+                    uk-slideshow="autoplay: true; animation:fade"
+                >
+
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <img src="images/couple1.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="images/couple2.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="images/couple3.jpg" alt="" uk-cover>
+                        </li>                        
+                        <li>
+                            <img src="images/couple4.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="images/couple5.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="images/couple6.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="images/couple7.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="images/couple8.jpg" alt="" uk-cover>
+                        </li>
+                        
+                    </ul>
+                    <div class="uk-position-top-left uk-position-small">
+                        <p class="hero-title uk-text-lead el-title uk-heading-medium uk-margin-small-top">
+                            Spark new<br>connections this<br>spring
+                            <!-- <button class="hero-cta uk-button uk-button-secondary uk-button-medium">Upcoming Events</button> -->
+                        </p>
+                        
+                    </div>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    
+    <div style="margin-top:6em" class="uk-section uk-preserve-color">
+        <div class="uk-container">
+
+            <div class="headline-container">
+                <h1 class="uk-text-normal">We just love Love </h1>
+                <span class="decorative-line"></span>
+            </div>
+            <p class="uk-text-large">Discover a refined way to date, prioritizing calm and simplicity over the usual noisy and elaborate setups. Our events are designed to be comfortable and inviting, where finding a special connection is a serene experience.</p>
+            <br>
+            <div class="uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <div style="box-shadow:none; border: 1px solid #fff" class="uk-card uk-card-default">
+                        <div class="uk-card-body">
+                            <!-- <p class="uk-text-center">
+                                <span uk-icon="icon: calendar; ratio:3"></span>
+                            </p> -->
+                            <p style="margin: .25em 0" class="uk-text-meta uk-text-normal uk-text-center uk-margin-remove-top">
+                                01
+                            </p>
+                            <p style="margin: .25em 0" class="uk-text-center uk-text-lead uk-margin-remove-top">
+                                Sign Up
+                            </p>
+                        </div>
+                        <div class="uk-card-media-bottom">
+                            <img style="border-radius: 10px" src="/dist/images/signup.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="box-shadow:none; border: 1px solid #fff" class="uk-card uk-card-default">
+                        <div class="uk-card-body">
+                            <!-- <p class="uk-text-center">
+                                <span uk-icon="icon: social; ratio:3"></span>
+                            </p> -->
+                            <p style="margin: .25em 0" class="uk-text-meta uk-text-normal uk-text-center uk-margin-remove-top">
+                                02
+                            </p>
+                            <p style="margin: .25em 0" class="uk-text-center uk-text-lead uk-margin-remove-top">
+                                Participate
+                            </p>
+                        </div>
+                        <div class="uk-card-media-bottom">
+                            <img style="border-radius: 10px" src="images/participage.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="box-shadow:none; border: 1px solid #fff" class="uk-card uk-card-default">
+                        <div class="uk-card-body">
+                            <!-- <p class="uk-text-center">
+                                <span uk-icon="icon: users; ratio:3"></span>
+                            </p> -->
+                            <p style="margin: .25em 0" class="uk-text-meta uk-text-normal uk-text-center uk-margin-remove-top">
+                                03
+                            </p>
+                            <p style="margin: .25em 0" class="uk-text-center uk-text-lead uk-margin-remove-top">
+                                Match
+                            </p>
+                        </div>
+                        <div class="uk-card-media-bottom">
+                            <img style="border-radius: 10px" src="images/match.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="about-us-half-container">
+                <div class="uk-container">
+                    <p style="margin: .25em 0" class="uk-text-meta uk-text-normal uk-margin-remove-top">
+                        OUR PROCESS
+                    </p>
+                    <p style="margin: .25em 0" class="uk-text-lead uk-margin-remove-top">
+                        Sign Up & Prepare
+                    </p>
+                    Choose and register for your preferred event through our website. Upon registration, you'll receive access to the MyCheekyDate 'Smart-Card' for an interactive and engaging evening. If you need any assistance or have questions, reach out to us at info@mycheekydate.com. This step ensures you're fully prepared for the unique and refined dating experience ahead, marked by our commitment to a serene and enjoyable atmosphere without the usual event excesses.
+                </div>
+            </div>     -->
+        </div>
+    </div>
+    <!-- Events list -->
+    <!-- We use generateCards() to build the cards that will go inside -->
+    <div class="uk-section">
+        <div class="uk-container">
+            <!-- <h1 class="uk-text-center">Upcoming events</h1> -->
+            <div class="headline-container">
+                <h1 class="uk-text-normal">Upcoming events </h1>
+                <span class="decorative-line"></span>
+            </div>
+            <div 
+                id="eventsContainer" 
+                class="uk-child-width-1-1@m" 
+                uk-grid
+            ></div>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="uk-section">
+        <div class="uk-container">
+            
+            <!-- <p class="uk-text-lead">Discover a refined way to date, prioritizing calm and simplicity over the usual noisy and elaborate setups. Our events are designed to be comfortable and inviting, where finding a special connection is a serene experience.</p> -->
+            <!-- <h3>Section</h3> -->
+            <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <img src="images/signup-blob.png" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</body>
+
+<script>
+
+    
+    function generateCards() {
+      const container = document.getElementById('eventsContainer');
+    
+      events.forEach(event => {
+        const card = document.createElement('div');
+        card.innerHTML = `
+
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="${event.imgSrc}" alt="" uk-cover>
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title"><b>${event.title}</b></h3>
+                        <p class="event-card-date">
+                            <span uk-icon="icon: calendar; ratio:1"></span>
+                            ${formatCompleteDate(event.date)}
+                        </p>
+                        <p class="event-card-date">
+                            <span uk-icon="icon: location; ratio:1"></span>
+                            ${event.address}
+                        </p>
+                        <div class="uk-margin card-badge-container">
+                            <span class="card-badge" style="margin-right:10px">Ages ${event.ageRange}</span>
+                            <span class="card-badge" style="margin-right:10px">${event.price}</span>
+                        </div>
+                        <p class="truncate-multiline">${event.description}</p>
+                        <a class="uk-button uk-button-primary" href="#modal-full-${event.title.split(" ").join("-")}" uk-toggle><b>Sign Up</b></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr class="uk-divider-icon">
+
+
+            <div id="modal-full-${event.title.split(" ").join("-")}" class="uk-modal-full" uk-modal>
+                <div class="uk-modal-dialog">
+                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                    <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                        <div class="uk-background-cover" style="background-image: url('${event.imgSrc}');" uk-height-viewport></div>
+                        <div class="uk-padding-large">
+                            <h1>${event.title}</h1>
+                            <div class="uk-margin">
+                                <span class="card-badge" style="">Ages ${event.ageRange}</span>
+                                <span class="card-badge" style="">${event.price}</span>
+                            </div>
+                            <p>${formatCompleteDate(event.date)}</p>
+                            <p >${event.description}</p>
+                            <stripe-buy-button
+                                buy-button-id="buy_btn_1P2bIKEHyH6cEcEhwbjwqRR0"
+                                publishable-key="pk_live_51OZdDmEHyH6cEcEh9QHNaFGItdFNbct2E2LZKdZgqLhDNQAMmcqqQQWVp6oPV77DKj74EsoLtHJZZMBzGOXOH69P00lqbDu4ya"
+                            >
+                            </stripe-buy-button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const colorThief = new ColorThief();
+
+        // Function to brighten a color
+        function brightenColor(rgb, factor) {
+            return rgb.map(function(color) {
+                return Math.min(255, color * factor); // Ensure the value does not exceed 255
+            });
+        }
+
+        // Function to update the background color of the div with id 'maindiv'
+        function updateBackgroundColor(imageElement) {
+            if (imageElement.complete) {
+                // Image is loaded; get the dominant color
+                let dominantColor = colorThief.getColor(imageElement);
+                dominantColor = brightenColor(dominantColor, 1.05); 
+                // Adjust the factor to achieve the desired brightness
+                const colorCss = `rgb(${dominantColor[0]}, ${dominantColor[1]}, ${dominantColor[2]})`;
+                console.log("colors: ", colorCss)
+                document.querySelectorAll('.dynamic-background').forEach(function(el) {
+                    el.style.backgroundColor = colorCss;
+                });
+
+            } else {
+                // Wait for the image to load if not done already
+                imageElement.addEventListener('load', function() {
+                    updateBackgroundColor(imageElement);
+                });
+            }
+        }
+
+        // Initialize the background color with the first image in the slider
+        const firstImage = document.querySelector('.uk-slideshow-items img'); // Adjust selector as needed
+        if (firstImage) {
+            updateBackgroundColor(firstImage);
+        }
+
+        // Initialize UIkit slider and listen for the `itemshown` event
+
+        UIkit.util.on('#slider-parent', 'beforeitemshow', function (event) {
+
+            const shownItem = event.target.querySelector('img'); // Assuming the shown item contains an img element
+            console.log('newImage showing')
+            if (shownItem) {
+                updateBackgroundColor(shownItem);
+            }
+        });
+    });
+    
+    // Call the function to generate cards
+    generateCards();
+    </script>
+</html>

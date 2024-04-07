@@ -1,0 +1,21 @@
+{
+  "name": "uikit-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-webp": "^5.0.0"
+  },
+  "devDependencies": {
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
